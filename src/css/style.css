@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1023px) {
+  .carousel-control-prev {
+    display: none; }
+  .carousel-control-next {
+    display: none; } }
+
+#Carousel {
+  overflow: hidden;
+  height: 75vh;
+  max-width: 100%; }
+
+.carousel-indicators--round li {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid #FFF;
+  background-color: transparent; }
+
+.carousel-indicators .active {
+  background-color: #fff;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px; }
+
+.carousel-inner {
+  height: 100%; }
+
+.llena {
+  height: 100%;
+  background-position: center;
+  background-size: cover; }
+  .llena--first {
+    background-image: url("/assets/slide-1.jpg"); }
+  .llena--second {
+    background-image: url("/assets/slide-2.jpg"); }
+  .llena--third {
+    background-image: url("/assets/slide-3.jpg"); }
+
+.carousel {
+  height: 100%; }
+
+.carousel-item {
+  height: 100%; }
+
+.active {
+  height: 100%; }
+
+.tt-title-principal {
+  color: #654e2d;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.tt-title-secondary {
+  color: #b4a48d;
+  font-family: 'Goudy Bookletter 1911', Georgia, serif;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #ffffff;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.navbar-div {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 85%;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 0;
+  border-color: transparent; }

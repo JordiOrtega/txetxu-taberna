@@ -1,0 +1,27 @@
+{
+  "name": "txetxu-taberna",
+  "version": "1.0.0",
+  "description": "Txetu-taberna responsive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordiOrtega/txetxu-taberna.git"
+  },
+  "author": "Jordi Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordiOrtega/txetxu-taberna/issues"
+  },
+  "homepage": "https://github.com/JordiOrtega/txetxu-taberna#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
