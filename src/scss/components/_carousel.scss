@@ -1,0 +1,117 @@
+#Carousel {
+    overflow: hidden;
+    height: 75vh;
+    max-width: 100%;
+}
+
+.carousel{
+    height: 100%;
+
+    &-control-prev{
+        display: none;
+    }
+
+    &-control-next {
+        display: none;
+    }
+
+    &-indicators{
+        .active {
+            display:none;
+            height: 100%;
+        }
+
+        &--round{
+            li{
+                display:none;
+            }
+        }
+    }
+
+    &-inner{
+        height: 100%;
+    }
+
+    &-item{
+        height: 100%;
+    }
+
+    &-llena{
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+
+        &--first{
+            background-image: url("/assets/slide-1.jpg");
+        }
+
+        &--second{
+            background-image: url("/assets/slide-2.jpg");
+        }
+
+        &--third{
+            background-image: url("/assets/slide-3.jpg");
+        }
+    }
+
+    &-header-text{
+        position: absolute;
+        top: 35%;
+        left: 0.5rem;
+        right: auto;
+        width: 95%;
+        background-color: rgba(grey, .3);
+        color:#fff;
+        padding: 1rem;
+    }
+}
+
+@media only screen 
+   and (min-width : 768px) {
+    .carousel{
+        
+        &-header-text{
+            width: 35%;
+            left: 10%;
+        }
+        
+        &-indicators {
+            .active {
+                display:initial;
+                background-color: $background_color_2;
+                max-width: 12px;
+                margin: 0 3px;
+                height: 12px;
+            }
+            
+            &--round{
+                li{
+                    display:initial;
+                    border-radius: 10px;
+                    margin: 1px 3px;
+                    height: 10px;
+                    max-width: 10px;
+                    border: 1px solid #FFF;
+                    background-color: $background_color_1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+	.carousel-header-text{
+		width: 25%;
+	}
+}
+// @media screen and (orientation: landscape) {
+// 	#Carousel {
+// 		height: 100vh;
+// 	}
+// }
+// @media screen and (orientation: portrait) {
+// 	#Carousel {
+// 		height: 75vh;
+// 	}
+// }

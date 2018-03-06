@@ -1,94 +1,76 @@
-$background_color_1: transparent;
-$background_color_2: #fff;
+@import "./abstracts/index";
+// @import 'base/';
+@import "./components/index";
+// @import 'layout/';
+// @import 'pages/';
 
-@media only screen and (max-width: 1023px) {
-	.carousel-control-prev {
-		display: none;
-	}
-	.carousel-control-next {
-		display: none;
-	}
-}
-#Carousel {
-	overflow: hidden;
-	height: 75vh;
-	max-width: 100%;
-}
-.carousel-indicators--round {
-	li {
-		border-radius: 10px;
-		margin: 1px 3px;
-		height: 10px;
-		max-width: 10px;
-		border: 1px solid #FFF;
-		background-color: $background_color_1;
-	}
-}
-.carousel-indicators {
-	.active {
-		background-color: $background_color_2;
-		max-width: 12px;
-		margin: 0 3px;
-		height: 12px;
-	}
-}
-.carousel-inner {
-	height: 100%;
-}
-.llena {
-	height: 100%;
-	background-position: center;
-    background-size: cover;
-    &--first{
-        background-image: url("/assets/slide-1.jpg");
-    }
-    &--second{
-        background-image: url("/assets/slide-2.jpg");
-    }
-    &--third{
-        background-image: url("/assets/slide-3.jpg");
-    }
-}
-.carousel {
-	height: 100%;
-}
-.carousel-item {
-	height: 100%;
-}
-.active {
-	height: 100%;
-}
 
 .tt-title-principal{
     color: #654e2d;
     padding-top: 15px;
-    padding-bottom: 15px;
+	padding-bottom: 15px;
+	font-size: 1.5rem;
 }
 .tt-title-secondary{
     color: #b4a48d;
     font-family: 'Goudy Bookletter 1911', Georgia, serif;
-    font-size: 14px;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px #ffffff;
     text-transform: uppercase;
     font-style: normal;
 }
-// @media screen and (orientation: landscape) {
-// 	#Carousel {
-// 		height: 100vh;
-// 	}
+
+
+
+  
+// .tt-navbar{
+// 	background-color:;
 // }
-// @media screen and (orientation: portrait) {
-// 	#Carousel {
-// 		height: 75vh;
-// 	}
-// }
-.navbar-div{
-    position:absolute;
-    left:10%;
-    top: 10%;
-    width:85%;
-    background-color:#fff;
-    z-index:10;
-    border-radius:0;
-    border-color:transparent;
+.tt-star{
+	color: rgba(149, 142, 125, .5);
+}
+
+
+
+
+@media only screen 
+   and (min-width : 768px) {
+	.tt-title-principal{
+		font-size: 2rem;
+	}
+	.tt-title-secondary{
+		font-size: 14px;
+	}
+}
+section{
+	margin-right: 15px;
+	margin-left: 15px;
+	position: relative;
+	// https://codepen.io/Paulie-D/pen/zxmNLM
+	
+		&:not(:last-child):after {
+			content:'';
+			margin-right: 15px;
+			margin-left: 15px;
+			width: 100%;
+			position: absolute;
+			left:0;
+			bottom:-1px;
+			height: 2px;
+			background: #333;
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 0%, 0%, .75)), color-stop(100%, hsla(0, 0%, 0%, 0)));
+			background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+			background: -moz-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+			background: -ms-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+			background: -o-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+			background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+		}
+		&:first-child{
+			background-color: #FBFBF8;
+		}
+		&:nth-child(2){
+			background: url('/assets/content-bg.png')
+		}
+
   }
+

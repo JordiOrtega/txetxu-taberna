@@ -1,0 +1,29 @@
+.navbar{
+    &-div{
+        position:absolute;
+        left:1.5rem;
+        top: 10%;
+        width:87%;
+        background-color: rgba(149, 142, 125, .8);
+        z-index:10;
+        border-radius:0;
+        border-color:transparent;
+        box-shadow: 5px 5px rgba(black, .8);
+    }
+    &-toggler{
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media only screen 
+   and (min-width : 768px) {
+    .navbar{
+        &-div{
+            left: 10%;
+        }
+        &-brand{
+            padding-right: 5rem;
+        }
+	}
+}

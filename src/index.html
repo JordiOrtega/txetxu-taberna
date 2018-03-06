@@ -14,45 +14,59 @@
 <body>
     <header>
         <div class="navbar-div">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a> 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <nav class="navbar navbar-toggleable-md navbar-light">
+                <div class="row justify-content-around align-items-center">
+                <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="Logo" class="img-fluid">
+                    </a> 
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPlace">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarPlace">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="#">¡Bienvenidos!
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Rioja & Tapas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vinos y licores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservas</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                Dropdown
+                                Carta
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Primeros platos y picoteo</a>
+                                <a class="dropdown-item" href="#">Segundos platos</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="#">Recomendaciones del chef</a>
+                                <a class="dropdown-item" href="#">Jornadas del Bacalao</a>
+                                <a class="dropdown-item" href="#">Pintxos Donostiarras</a>
+                                <a class="dropdown-item" href="#">Postres</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
         </div>
-    </header>
+    
     <div class="redes-sociales"></div>
-    <div class="container-fluid llena">
+    <div class="container-fluid carousel-llena">
         <div id="Carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
             <ol class="carousel-indicators carousel-indicators--round">
                 <li data-target="#Carousel" data-slide-to="0" class="active"></li>
@@ -60,11 +74,29 @@
                 <li data-target="#Carousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="active carousel-item llena llena--first">
+                <div class="active carousel-item carousel-llena carousel-llena--first">
+                    <div class="carousel-header-text">
+                            <h1>¡Bienvenidos a Txetxu Taberna!</h1>
+
+                            <p>De reciente creación (año 2006), la cocina de Txetxu, el Chef a cargo del restaurante, 
+                                ya ha dejado huella en el barrio de Horta. La cocina de Txetxu Taberna es...    </p>
+                    </div>
                 </div>
-                <div class="carousel-item llena llena--second">
+                <div class="carousel-item carousel-llena carousel-llena--second">
+                    <div class="carousel-header-text">
+                            <h1>Nuestra Carta</h1>
+
+                            <p>Primeros: Pil Pil de Pochas Habitas salteadas con jamón de Jabugo Ensalada Tibia de queso de 
+                                cabra con vinagreta de vainilla Virutas de foié a la sal con coulis de flores y...</p>
+                    </div>
                 </div>
-                <div class="carousel-item llena llena--third">
+                <div class="carousel-item carousel-llena carousel-llena--third">
+                    <div class="carousel-header-text">
+                            <h1>Pintxos Donostiarras</h1>
+
+                            <p>En Txetxu Taberna te ofrecemos pequeñas porciones de alta cocina convertidos en sabrosos Pintxos Donostiarras: 
+                            Gambas en gabardina con salsa Thai Magret de pato con salsa de...</p>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
@@ -77,24 +109,72 @@
             </a>
         </div>
     </div>
+    </header>  
+    <main>
     <section>
         <div class="container">
-            <h2 class="tt-title-principal text-center">Cocina Vasco-Navarra, tradicional y de autor</h2>
-            <h3 class="tt-title-secondary text-center">Ven a descubrir nuestro pequeño rincón en el barrio de Horta de Barcelona</h3>
-            <p class="text-center">
-                <i class="far fa-star text-center"></i>
-                <i class="far fa-star text-center"></i>
-                <i class="far fa-star text-center"></i>
-                <i class="far fa-star text-center"></i>
-                <i class="far fa-star text-center"></i>
-            </p>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h2 class="tt-title-principal text-center">Cocina Vasco-Navarra, tradicional y de autor</h2>
+                    <h3 class="tt-title-secondary text-center">Ven a descubrir nuestro pequeño rincón en el barrio de Horta de Barcelona</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p class="text-center tt-star">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
+
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">RECOMENDACIONES DEL CHEF
+                        <div class="row">
+                            <div class="col">Coca de sardinas marinadas</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Ensalada de habitas baby con tartar de atún</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Hamburguesa casera con Foie</div>
+                        </div>
+                    </div>
+                    <div class="col">DONDE ESTAMOS</div>
+                    <div class="col">CLIENTES CONTENTOS</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col"></div>
+                    <div class="col text-center">
+                        <a class="btn btn-info" role="button" href="#">Haz click aquí para ver nuestra carta</a>
+                    </div>
+                    <div class="col"></div>
+                </div>
+        </section>
+    </main> 
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">&nbsp;</div>
+                </div>
+            </div>
+    </footer>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/tether.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script></script>
-    <script></script>
 </body>
 
 </html>
